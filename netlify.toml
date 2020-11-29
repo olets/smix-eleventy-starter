@@ -1,0 +1,9 @@
+[build]
+  command = "npm run prod"
+
+[build.environment]
+  NODE_ENV = "production"
+  ELEVENTY_ENV = "staging"
+
+[context.production.environment]
+  ELEVENTY_ENV = "production"

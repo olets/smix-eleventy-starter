@@ -2,31 +2,37 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '0.25rem',
+      padding: "0.25rem"
     },
     extend: {
       colors: {},
       screens: {
-        'dm': { raw: '(prefers-color-scheme: dark)' }
+        dm: { raw: "(prefers-color-scheme: dark)" }
       }
     },
     fontFamily: {
       sans: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        'Segoe UI',
-        'Roboto',
-        'Helvetica Neue',
-        'Arial',
-        'Noto Sans',
-        'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji',
-      ],
-    },
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji"
+      ]
+    }
+  },
+  purge: {
+    content: ["./src/**/*.liquid", "./src/**/*.njk", "./src/**/*.js"],
+    options: {
+      whitelist: ["container", "grid"]
+    }
   },
   variants: {},
-  plugins: [],
+  plugins: []
 };
